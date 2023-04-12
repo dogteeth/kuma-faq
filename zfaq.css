@@ -1,0 +1,70 @@
+.zfaq_container {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
+.ztitle {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.ztitle h1 {
+    color: white;
+}
+
+.zfaqSelector {
+    display: none;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.zfaqSections {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.zfaqSectionTitle {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.zfaqSelector h3 {
+    background-color: black;
+    color: white;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.zfaqSectionQ {
+    margin-top: 1rem;
+}
+
+.zfaqSectionA {
+    text-align: justify;
+}
+
+.zfaqSectionQA {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-top: solid grey 0.2rem;
+}
+
+.zfaqSectionQA:first-child {
+    margin-top: 0rem;
+}
+
+.zfaqSectionQA:last-child {
+    margin-top: 0rem;
+    padding-bottom: 2rem;
+    border-bottom: solid grey 0.2rem;
+}

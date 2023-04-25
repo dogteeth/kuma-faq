@@ -1,0 +1,263 @@
+:root {
+  --c01: rgb(16, 24, 32);
+  --c02: rgb(131, 151, 148);
+  --c03: rgb(0, 54, 61);
+  --c04: rgb(128, 128, 128);
+  --c05: rgb(170, 151, 103);
+  --c06: rgb(255, 255, 255);
+  --c07: rgb(0, 54, 61);
+  --c08: rgb(117, 122, 77);
+  --c09: rgb(170, 151, 103);
+  --c10: rgb(131, 151, 148);
+  --c11: rgb(155, 174, 171);
+  --c12: rgb(0, 0, 0);
+  --c13: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* mobile */
+@media (max-width: 799px) {
+  .zfaq_container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .imgFAQ {
+    display: none;
+  }
+
+  .ztitle {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right,
+        rgba(128, 128, 128, 0.7) 5%,
+        rgba(128, 128, 128, 0) 70%
+      ),
+      var(--c03);
+    gap: 1rem;
+  }
+
+  .zText {
+    color: var(--c11);
+  }
+
+  .zFaqEN {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+  }
+  .zFaqEN > .zFaqTitle-EN {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+  .zText > .zFaqTitle-CN {
+    font-size: 4rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .zfaqContents {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+
+  .zfaqSelectors {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .zfaq_container {
+    width: 100%;
+    margin: auto;
+  }
+  .imgFAQ {
+    display: none;
+  }
+
+  .ztitle {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right,
+        rgba(128, 128, 128, 0.7) 5%,
+        rgba(128, 128, 128, 0) 70%
+      ),
+      var(--c03);
+    gap: 1rem;
+  }
+
+  .zText {
+    display: flex;
+    gap: 1rem;
+    color: var(--c11);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zFaqEN {
+    display: flex;
+    flex-direction: column;
+  }
+  .zFaqEN > .zFaqTitle-EN {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+  .zText > .zFaqTitle-CN {
+    font-size: 6rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .zfaqContents {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+
+  .zfaqSelectors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+  .zfaq_container {
+    width: 75%;
+    margin: auto;
+  }
+
+  .ztitle {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right,
+        rgba(128, 128, 128, 0.7) 5%,
+        rgba(128, 128, 128, 0) 70%
+      ),
+      var(--c03);
+    gap: 1rem;
+  }
+
+  .zText {
+    display: flex;
+    gap: 1rem;
+    color: var(--c11);
+    justify-content: center;
+    align-items: center;
+  }
+  .imgFAQ {
+    height: 20rem;
+    padding: 2rem 0rem 2rem 0rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5));
+  }
+
+  .zFaqEN {
+    display: flex;
+    flex-direction: column;
+  }
+  .zFaqEN > .zFaqTitle-EN {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+  .zText > .zFaqTitle-CN {
+    font-size: 6rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .zfaqContents {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+
+  .zfaqSelectors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.selectorContainer {
+  padding: 1rem;
+  gap: 1rem;
+  background: var(--c11);
+}
+
+.zfaqSectionTitle {
+  text-align: center;
+}
+.zfaqSection {
+  margin-top: 1rem;
+}
+
+.zfaqSelector li {
+  list-style: square;
+  margin-left: 1rem;
+}
+.zfaqSection:last-child {
+  margin-bottom: 2rem;
+}
+
+.zfaqSectionTitle {
+}
+.zfaqSectionTitle > h2 {
+  color: white;
+  background: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.7) 5%,
+      rgba(128, 128, 128, 0)
+    ),
+    var(--c03);
+}
+
+.zfaqSectionQA {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin: 1rem 0rem 1rem 0rem;
+  border-bottom: solid var(--c11) 0.2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.zfaqSectionQA:last-child {
+  border-bottom: none;
+}
+
+.zfaqSectionQ {
+  flex: 0 0 30%;
+}
+.zfaqSectionA {
+  flex: 0 0 65%;
+  text-align: justify;
+}
+.backToTop {
+  grid-column: 4;
+  text-align: right;
+  font-weight: bold;
+}

@@ -46,7 +46,7 @@ html {
         rgba(128, 128, 128, 0) 70%
       ),
       var(--c03);
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .imgFAQ {
@@ -108,14 +108,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c03);
-    /* 
+    /* background-color: var(--c03); */
+
     background: linear-gradient(
         to right,
         rgba(128, 128, 128, 0.7) 5%,
         rgba(128, 128, 128, 0) 70%
       ),
-      var(--c03); */
+      var(--c03);
     gap: 1rem;
   }
 
@@ -180,14 +180,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c03);
-    /* background: linear-gradient(
+    /* background-color: var(--c03); */
+    background: linear-gradient(
         to right,
         rgba(128, 128, 128, 0.7) 5%,
         rgba(128, 128, 128, 0) 70%
       ),
-      var(--c03); */
-    gap: 1rem;
+      var(--c03);
+    gap: 0.5rem;
   }
 
   .zText {
@@ -265,6 +265,7 @@ html {
 
 .zfaqSectionTitle > h2 {
   color: white;
+  padding: 0.2rem 0rem;
   background: linear-gradient(
       to right,
       rgba(128, 128, 128, 0.7) 5%,

@@ -25,6 +25,10 @@ html {
 
 /* mobile */
 @media (max-width: 799px) {
+  ::-webkit-scrollbar {
+    width: 0em;
+  }
+
   /* 主版寬度 - mobile */
 
   .zfaq_container {
@@ -98,6 +102,31 @@ html {
   :target {
     padding-top: 65px;
     margin-top: -65px;
+  }
+
+  /* 購票問題圖檔 */
+
+  .imgsForSteps {
+    display: flex;
+    overflow-y: scroll;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .stepContent {
+    flex: 0 0 90%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .stepContent > p {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .stepContent > img {
+    width: 100%;
+    box-shadow: 1px 1px 5px var(--c01);
   }
 }
 
@@ -173,6 +202,23 @@ html {
   .zfaqSectionQA {
     flex-direction: row;
   }
+
+  /* 購票問題圖檔 */
+  .imgsForSteps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .stepContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .stepContent > img {
+    width: 100%;
+    box-shadow: 1px 1px 5px var(--c01);
+  }
 }
 
 /* desktop */
@@ -244,6 +290,23 @@ html {
   .zfaqSectionQA {
     flex-direction: row;
   }
+
+  /* 購票問題圖檔 */
+  .imgsForSteps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .stepContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .stepContent > img {
+    width: 100%;
+    box-shadow: 1px 1px 5px var(--c01);
+  }
 }
 
 .selectorContainer {
@@ -311,19 +374,6 @@ html {
 .zfaqSectionA > p > a {
   text-decoration: underline;
   white-space: nowrap;
-}
-
-.imgsForSteps {
-  width: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 1rem;
-}
-
-.imgsForSteps > img {
-  width: 100%;
-  box-shadow: 1px 1px 5px var(--c01);
 }
 
 .backToTop {
